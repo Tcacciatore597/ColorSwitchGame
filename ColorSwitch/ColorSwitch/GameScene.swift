@@ -92,7 +92,13 @@ class GameScene: SKScene {
     }
     
     func gameOver() {
-        print("Game Over!")
+        UserDefaults.standard.set(score, forKey: "RecentScore")
+        if score > UserDefaults.standard.integer(forKey: "HighScore") {
+            UserDefaults.standard.set(score, forKey: "HighScore")
+        }
+        
+        let menu = MenuScene(size: view!.bounds.size)
+        view!.presentScene(menu)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -107,6 +113,7 @@ extension GameScene: SKPhysicsContactDelegate {
         if contactMask == PhysicsCategories.ballCategory | PhysicsCategories.switchCategory {
             if let ball = contact.bodyA.node?.name == "Ball" ? contact.bodyA.node as? SKSpriteNode : contact.bodyB.node as? SKSpriteNode {
                 if currentColorIndex == switchState.rawValue {
+                    run(SKAction.playSoundFileNamed("bling", waitForCompletion: false))
                     score += 1
                     updateScoreLabel()
                     ball.run(SKAction.fadeOut(withDuration: 0.25)) {

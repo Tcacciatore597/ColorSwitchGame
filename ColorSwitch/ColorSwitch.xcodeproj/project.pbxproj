@@ -13,6 +13,8 @@
 		421ADC6D247DCE620053FA9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421ADC6B247DCE620053FA9B /* Main.storyboard */; };
 		421ADC6F247DCE650053FA9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421ADC6E247DCE650053FA9B /* Assets.xcassets */; };
 		421ADC72247DCE650053FA9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421ADC70247DCE650053FA9B /* LaunchScreen.storyboard */; };
+		424865912481A66E00261056 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424865902481A66E00261056 /* MenuScene.swift */; };
+		424865932481B10700261056 /* bling.wav in Resources */ = {isa = PBXBuildFile; fileRef = 424865922481B10600261056 /* bling.wav */; };
 		427B3521247DD762007C17A4 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427B3520247DD762007C17A4 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		421ADC6E247DCE650053FA9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		421ADC71247DCE650053FA9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		421ADC73247DCE650053FA9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		424865902481A66E00261056 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		424865922481B10600261056 /* bling.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bling.wav; sourceTree = "<group>"; };
 		427B3520247DD762007C17A4 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +70,8 @@
 				421ADC69247DCE620053FA9B /* GameViewController.swift */,
 				421ADC73247DCE650053FA9B /* Info.plist */,
 				427B3520247DD762007C17A4 /* Settings.swift */,
+				424865902481A66E00261056 /* MenuScene.swift */,
+				424865922481B10600261056 /* bling.wav */,
 			);
 			path = ColorSwitch;
 			sourceTree = "<group>";
@@ -129,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				421ADC6D247DCE620053FA9B /* Main.storyboard in Resources */,
+				424865932481B10700261056 /* bling.wav in Resources */,
 				421ADC6F247DCE650053FA9B /* Assets.xcassets in Resources */,
 				421ADC72247DCE650053FA9B /* LaunchScreen.storyboard in Resources */,
 			);
@@ -143,6 +150,7 @@
 			files = (
 				421ADC68247DCE620053FA9B /* GameScene.swift in Sources */,
 				421ADC6A247DCE620053FA9B /* GameViewController.swift in Sources */,
+				424865912481A66E00261056 /* MenuScene.swift in Sources */,
 				427B3521247DD762007C17A4 /* Settings.swift in Sources */,
 				421ADC62247DCE620053FA9B /* AppDelegate.swift in Sources */,
 			);
